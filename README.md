@@ -1,5 +1,7 @@
 <div align="center">
 
+![Tropicália AI Logo](https://bit.ly/4eBWUgq)
+
 # UPSKILLING AI CODING PRACTICE
 
 **Base de estudos, desafios práticos e mentoria em Inteligência Artificial aplicada ao desenvolvimento de software**
@@ -7,6 +9,15 @@
 > **Aprenda IA aplicada ao ciclo de desenvolvimento real:** geração de código, refatoração, testes e revisão com IA.
 
 </div>
+
+## Quem somos
+
+Somos **[Alice Paixão](https://www.linkedin.com/in/alicepaixao/)** e **[Silas Fernandes](https://www.linkedin.com/in/silasfernandes/)**, especialistas em inteligência artificial aplicada e no ensino de tecnologias emergentes. Atuamos como professores e consultores B2B, apoiando empresas e profissionais que desejam acelerar sua jornada em IA e desenvolvimento de software moderno.
+
+**Quer transformar seu time ou aprender IA aplicada na prática? Entre em contato!**
+
+[LinkedIn Tropicália AI](https://www.linkedin.com/company/tropicalia-ai) | [Site Tropicália AI](https://tropicalia.ai/)
+
 
 > Este repositório foi adaptado a partir do [node-express-boilerplate](https://github.com/hagopj13/node-express-boilerplate)
 
@@ -23,7 +34,7 @@ Explorar como aplicar ferramentas de inteligência artificial no ciclo de desenv
 Clone o repositório:
 
 ```bash
-git clone https://github.com/gx2/upskilling-ai-coding-practice.git
+git clone https://github.com/alicepaixao/upskilling-ai-coding-practice.git
 cd upskilling-ai-coding-practice
 ```
 
