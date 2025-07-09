@@ -1,42 +1,33 @@
 <div align="center">
 
-<img src="https://bit.ly/4eBWUgq" alt="Tropicália AI Logo" width="120" />
+![Tropicália AI Logo](https://bit.ly/4eBWUgq)
 
 # UPSKILLING AI CODING PRACTICE
 
 **Base de estudos, desafios práticos e mentoria em Inteligência Artificial aplicada ao desenvolvimento de software**
 
----
-
-| 🚀 | Aprenda IA aplicada ao ciclo de desenvolvimento real: geração de código, refatoração, testes e revisão com IA. |
-|----|---------------------------------------------------------------------------------------------------------------|
-
----
-
-## Sobre as autoras e mentores
-
-Somos **Alice Paixão** e **Silas Fernandes**, especialistas em backend, IA aplicada, DevOps e ensino de tecnologia. Atuamos como mentores, instrutores e consultores para empresas e profissionais que querem acelerar sua jornada em IA e desenvolvimento moderno.
-
-**Quer transformar seu time ou aprender IA aplicada na prática? Entre em contato!**
-
-[LinkedIn Alice](https://www.linkedin.com/in/alicepaixao/) | [E-mail Alice](mailto:paixaogomesalice@gmail.com)  
-[LinkedIn Silas](https://www.linkedin.com/in/silasfernandes/) | [E-mail Silas](mailto:s.fernandes.silas@gmail.com)
-
-[LinkedIn Tropicália AI](https://www.linkedin.com/company/tropicalia-ai) | [Site Tropicália AI](https://tropicalia.ai/)
-
----
-
-> **Este repositório foi adaptado a partir do [node-express-boilerplate](https://github.com/hagopj13/node-express-boilerplate)**
-
-<div align="center">
-
-| Propósito |
-|-----------|
-| Explorar como aplicar ferramentas de inteligência artificial no ciclo de desenvolvimento real, com foco em geração de código, refatoração, testes e revisão com IA. |
+> **Aprenda IA aplicada ao ciclo de desenvolvimento real:** geração de código, refatoração, testes e revisão com IA.
 
 </div>
 
----
+## Quem somos
+
+Somos **[Alice Paixão](https://www.linkedin.com/in/alicepaixao/)** e **[Silas Fernandes](https://www.linkedin.com/in/silasfernandes/)**, especialistas em inteligência artificial aplicada e no ensino de tecnologias emergentes. Atuamos como professores e consultores B2B, apoiando empresas e profissionais que desejam acelerar sua jornada em IA e desenvolvimento de software moderno.
+
+**Quer transformar seu time ou aprender IA aplicada na prática? Entre em contato!**
+
+[LinkedIn Tropicália AI](https://www.linkedin.com/company/tropicalia-ai) | [Site Tropicália AI](https://tropicalia.ai/)
+
+
+> Este repositório foi adaptado a partir do [node-express-boilerplate](https://github.com/hagopj13/node-express-boilerplate)
+
+
+
+## Propósito
+
+Explorar como aplicar ferramentas de inteligência artificial no ciclo de desenvolvimento real, com foco em geração de código, refatoração, testes e revisão com IA.
+
+
 
 ## Instalação e Configuração
 
@@ -60,21 +51,25 @@ cp .env.example .env
 # Edite o arquivo .env conforme necessário
 ```
 
+
+
 ## Índice
 
 - [Funcionalidades](#funcionalidades)
 - [Comandos](#comandos)
-- [Variáveis de Ambiente](#variaveis-de-ambiente)
+- [Variáveis de Ambiente](#variáveis-de-ambiente)
 - [Estrutura do Projeto](#estrutura-do-projeto)
-- [Documentação da API](#documentacao-da-api)
+- [Documentação da API](#documentação-da-api)
 - [Tratamento de Erros](#tratamento-de-erros)
-- [Validação](#validacao)
-- [Autenticação](#autenticacao)
-- [Autorização](#autorizacao)
+- [Validação](#validação)
+- [Autenticação](#autenticação)
+- [Autorização](#autorização)
 - [Logs](#logs)
 - [Plugins Customizados do Mongoose](#plugins-customizados-do-mongoose)
 - [Lint](#lint)
 - [Contribuindo](#contribuindo)
+
+
 
 ## Funcionalidades
 
@@ -99,6 +94,8 @@ cp .env.example .env
 - **Git hooks**: com husky e lint-staged
 - **Lint**: com ESLint e Prettier
 - **Editor config**: configuração consistente com EditorConfig
+
+
 
 ## Comandos
 
@@ -172,6 +169,8 @@ yarn prettier:fix
 ```
 > Corrige a formatação do código com Prettier.
 
+
+
 ## Variáveis de Ambiente
 
 As variáveis de ambiente podem ser encontradas e modificadas no arquivo `.env`. Valores padrão:
@@ -196,44 +195,50 @@ SMTP_PASSWORD=email-server-password
 EMAIL_FROM=support@yourapp.com
 ```
 
+
+
 ## Estrutura do Projeto
 
 ```
-src\
- |--config\         # Variáveis de ambiente e configurações
- |--controllers\    # Controllers das rotas
- |--docs\           # Arquivos Swagger
- |--middlewares\    # Middlewares customizados do Express
- |--models\         # Modelos Mongoose (camada de dados)
- |--routes\         # Rotas
- |--services\       # Lógica de negócio
- |--utils\          # Utilitários
- |--validations\    # Schemas de validação
- |--app.js          # App Express
- |--index.js        # Ponto de entrada
+src/
+  ├─ config/         # Variáveis de ambiente e configurações
+  ├─ controllers/    # Controllers das rotas
+  ├─ docs/           # Arquivos Swagger
+  ├─ middlewares/    # Middlewares customizados do Express
+  ├─ models/         # Modelos Mongoose (camada de dados)
+  ├─ routes/         # Rotas
+  ├─ services/       # Lógica de negócio
+  ├─ utils/          # Utilitários
+  ├─ validations/    # Schemas de validação
+  ├─ app.js          # App Express
+  └─ index.js        # Ponto de entrada
 ```
+
+
 
 ## Documentação da API
 
-Para ver a lista de APIs disponíveis e suas especificações, rode o servidor e acesse `http://localhost:3001/v1/docs` no navegador. Esta página é gerada automaticamente usando as definições Swagger escritas nos arquivos de rota.
+Para ver a lista de APIs disponíveis e suas especificações, rode o servidor e acesse [http://localhost:3001/v1/docs](http://localhost:3001/v1/docs) no navegador. Esta página é gerada automaticamente usando as definições Swagger escritas nos arquivos de rota.
 
 ### Endpoints
 
-**Rotas de autenticação:**  
-`POST /v1/auth/register` - registrar  
-`POST /v1/auth/login` - login  
-`POST /v1/auth/refresh-tokens` - renovar tokens  
-`POST /v1/auth/forgot-password` - enviar e-mail de redefinição de senha  
-`POST /v1/auth/reset-password` - redefinir senha  
-`POST /v1/auth/send-verification-email` - enviar e-mail de verificação  
-`POST /v1/auth/verify-email` - verificar e-mail
+**Rotas de autenticação:**
+- `POST /v1/auth/register` - registrar
+- `POST /v1/auth/login` - login
+- `POST /v1/auth/refresh-tokens` - renovar tokens
+- `POST /v1/auth/forgot-password` - enviar e-mail de redefinição de senha
+- `POST /v1/auth/reset-password` - redefinir senha
+- `POST /v1/auth/send-verification-email` - enviar e-mail de verificação
+- `POST /v1/auth/verify-email` - verificar e-mail
 
-**Rotas de usuário:**  
-`POST /v1/users` - criar usuário  
-`GET /v1/users` - listar usuários  
-`GET /v1/users/:userId` - obter usuário  
-`PATCH /v1/users/:userId` - atualizar usuário  
-`DELETE /v1/users/:userId` - deletar usuário
+**Rotas de usuário:**
+- `POST /v1/users` - criar usuário
+- `GET /v1/users` - listar usuários
+- `GET /v1/users/:userId` - obter usuário
+- `PATCH /v1/users/:userId` - atualizar usuário
+- `DELETE /v1/users/:userId` - deletar usuário
+
+
 
 ## Tratamento de Erros
 
@@ -276,6 +281,8 @@ const getUser = async (userId) => {
 };
 ```
 
+
+
 ## Validação
 
 Os dados das requisições são validados usando [Joi](https://joi.dev/). Os schemas ficam em `src/validations` e são usados nas rotas via middleware `validate`:
@@ -290,6 +297,8 @@ const router = express.Router();
 
 router.post('/users', validate(userValidation.createUser), userController.createUser);
 ```
+
+
 
 ## Autenticação
 
@@ -319,6 +328,8 @@ Após expirar, um novo token pode ser gerado via `POST /v1/auth/refresh-tokens` 
 
 O refresh token é válido por 30 dias (configurável via `JWT_REFRESH_EXPIRATION_DAYS`).
 
+
+
 ## Autorização
 
 O middleware `auth` também pode exigir permissões específicas:
@@ -339,6 +350,8 @@ As permissões são baseadas em papéis (roles), definidos em `src/config/roles.
 
 Se o usuário não tiver permissão, retorna erro 403.
 
+
+
 ## Logs
 
 Importe o logger de `src/config/logger.js` (usa Winston):
@@ -357,6 +370,8 @@ logger.debug('mensagem'); // nível 5
 No modo desenvolvimento, todos os níveis são exibidos no console. Em produção, apenas info, warn e error.
 
 As requisições HTTP também são logadas automaticamente (usando Morgan).
+
+
 
 ## Plugins Customizados do Mongoose
 
@@ -416,6 +431,8 @@ O método retorna:
 }
 ```
 
+
+
 ## Lint
 
 O projeto usa ESLint e Prettier, seguindo o guia de estilo do Airbnb com modificações. Para alterar configurações, edite `.eslintrc.json` e `.prettierrc.json`.
@@ -424,15 +441,19 @@ Arquivos e pastas ignorados devem ser adicionados em `.eslintignore` e `.prettie
 
 Para manter o estilo consistente entre editores, o projeto inclui `.editorconfig`.
 
+
+
 ## Contribuindo
 
 Contribuições são muito bem-vindas! Veja o [guia de contribuição](CONTRIBUTING.md).
+
 
 ## Inspirações
 
 - [danielfsousa/express-rest-es2017-boilerplate](https://github.com/danielfsousa/express-rest-es2017-boilerplate)
 - [madhums/node-express-mongoose](https://github.com/madhums/node-express-mongoose)
 - [kunalkapadia/express-mongoose-es6-rest-api](https://github.com/kunalkapadia/express-mongoose-es6-rest-api)
+
 
 ## Licença
 
