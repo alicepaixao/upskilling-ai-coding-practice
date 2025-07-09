@@ -1,6 +1,6 @@
 # 📚 Upskilling AI in Development – Challenge Log
 
-**Repositório:** [github.com/alicepaixao/upskilling-ai-coding-practice](https://github.com/alicepaixao/upskilling-ai-coding-practice)  
+**Repositório:** [github.com/gx2/upskilling-ai-coding-practice](https://github.com/gx2/upskilling-ai-coding-practice)  
 **Base:** [github.com/hagopj13/node-express-boilerplate](https://github.com/hagopj13/node-express-boilerplate)
 
 > **Objetivo:**
